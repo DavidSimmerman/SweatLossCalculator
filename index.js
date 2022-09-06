@@ -46,7 +46,7 @@ const type = digit => {
 const backspace = () => {
 	let active = document.querySelector('.active');
 	if (!active) return;
-	setValue(active.innerText.replace(/.$/, ''));
+	setValue(active.innerText.replace('.', '').replace(/.$/, ''));
 };
 
 const clear = () => {
